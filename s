@@ -1,6 +1,7 @@
 local ItemSpawns = game.Workspace.ItemSpawns
 local a = game.Players.LocalPlayer.Character.HumanoidRootPart
 local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport
 	local ontp = game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
 	local handicappedbastads = [[
@@ -9,7 +10,7 @@ local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKhol
           
             end
             ]]
-        
+        queueteleport(stringtp)
 
 
 
