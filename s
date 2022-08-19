@@ -10,7 +10,7 @@ local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or flux
           
             end
             ]]
-        queueteleport(stringtp)
+        queueteleport(handicappedbastads)
 
 
 
